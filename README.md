@@ -50,6 +50,8 @@ The following image tags are available:
 * Set various [environment variables](#environment-variables) to understand the capabilities of this image.
 * Map [persistent storage](#data-volumes) for access to configuration and data files for backup.
 
+### Example Run
+docker run -d --restart unless-stopped --name insync -e USERNAME=your@gmail.com -e DOWNLOAD=odt -e AUTH_CODE=INSERT-FROM-ABOVE-LINK -v /gdrive/account:/data oneguynick/insync
 
 # Configuration
 
