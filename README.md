@@ -1,5 +1,3 @@
-# hub.docker.com/oneguynick/insync
-
 # Introduction
 
 Dockerfile to build an [Insync](https://www.insynchq.com) container image to synchronize Google Drive.
