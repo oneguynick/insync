@@ -48,6 +48,7 @@ The following image tags are available:
 * Visit [https://goo.gl/jv797S](https://goo.gl/jv797S) to authorize Insync for your Google Drive Account
 
 * Set various [environment variables](#environment-variables) to understand the capabilities of this image.
+
 * Map [persistent storage](#data-volumes) for access to configuration and data files for backup.
 
 ### Example Run
@@ -88,9 +89,11 @@ No Ports Exposed
 # Maintenance
 
 ### Selectively Syncing Files
+
 * Enter the container and execute `manage_sync` and use the Ncurses Interface
 
 ### Ignoring Files/Folders
+
 * Enter the container and execute `manage_ignore` and use the Ncurses Interface
 
 #### Shell Access
