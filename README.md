@@ -52,7 +52,9 @@ The following image tags are available:
 * Map [persistent storage](#data-volumes) for access to configuration and data files for backup.
 
 ### Example Run
+```bash
 docker run -d --restart unless-stopped --name insync -e USERNAME=your@gmail.com -e DOWNLOAD=odt -e AUTH_CODE=INSERT-FROM-ABOVE-LINK -v /gdrive/account:/data oneguynick/insync
+```
 
 # Configuration
 
