@@ -1,4 +1,4 @@
-# hub.docker.com/oneguynick/docker-insync
+# hub.docker.com/oneguynick/insync
 
 # Introduction
 
