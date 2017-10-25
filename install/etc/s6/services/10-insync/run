@@ -11,4 +11,6 @@ if [ ! -f /tmp/state/10-insync ]; then
 fi
 
 echo "** [insync] Starting insync-headless for "$USERNAME
-exec /usr/bin/insync-headless start --no-daemon
+exec /usr/bin/insync-headless add_account -a "${AUTH_CODE}" -p /data/${USERNAME} -e ${DOWNLOAD}
+exec /usr/bin/insync-headless start
+#exec /usr/bin/insync-headless start --no-daemon
