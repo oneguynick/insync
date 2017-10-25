@@ -45,7 +45,7 @@ The following image tags are available:
 
 * The quickest way to get started is using [docker-compose](https://docs.docker.com/compose/). See the examples folder for a working [docker-compose.yml](examples/docker-compose.yml) that can be modified for development or production use.
 
-* Visit [https://goo.gl/jv797S](https://goo.gl/jv797S) to authorize Insync for your Google Drive Account
+* Visit [https://goo.gl/jv797S](https://goo.gl/jv797S) to authorize Insync for your Google Drive Account. This is time sensitive so do it quickly before running this.
 
 * Set various [environment variables](#environment-variables) to understand the capabilities of this image.
 
@@ -53,7 +53,7 @@ The following image tags are available:
 
 ### Example Run
 ```bash
-docker run -d --restart unless-stopped --name insync -e USERNAME=your@gmail.com -e DOWNLOAD=odt -e AUTH_CODE=INSERT-FROM-ABOVE-LINK -v /gdrive/account:/data oneguynick/insync
+docker run -d --restart unless-stopped --name insync -e USERNAME=your@gmail.com -e DOWNLOAD=open-document -e TZDATA=America/Detroit -e AUTH_CODE=INSERT-FROM-ABOVE-LINK -v /gdrive/account:/data oneguynick/insync
 ```
 
 # Configuration
@@ -69,8 +69,6 @@ The following directories are used for configuration and can be mapped for persi
 | `/data` | Root Directory |
 
 ### Environment Variables
-
-Along with the Environment Variables from the [Base image](https://hub.docker.com/r/tiredofit/debian), below is the complete list of available options that can be used to customize your installation.
 
 | Parameter | Description |
 |-----------|-------------|
